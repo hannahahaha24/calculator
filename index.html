@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>calculator</title>
+</head>
+
+<body>
+  <main class="main">
+      <div class="calc">
+        <div class="calc-display">
+          <input disabled type="text" id="display" value="0" name="" placeholder="000000000000000000" class="calc-display-input">
+        </div>
+        <div class="calc-buttons">
+          <table class="calc-table">
+            <tr class="calc-buttons-row">
+              <td>
+                <button type="button" class="clear_btn btn btn-hover-red" id="ce">ce</button>
+              </td>
+              <td>
+                <button type="button" class="clear_btn btn btn-hover-red" id="c">c</button>
+              </td>
+              <td>
+                <button type="button" class="operator btn btn-hover-orange">/</button>
+              </td>
+              <td>
+                <button type="button" class="operator btn btn-hover-orange">*</button>
+              </td>
+            </tr>
+            <tr class="calc-buttons-row">
+              <td>
+                <button type="button" class="btn-hover-green btn number">7</button>
+              </td>
+              <td>
+                <button type="button" class="btn-hover-green btn number">8</button>
+              </td>
+              <td>
+                <button type="button" class="btn-hover-green btn number">9</button>
+              </td>
+              <td>
+                <button type="button" class="operator btn btn-hover-orange">-</button>
+              </td>
+            </tr>
+            <tr class="calc-buttons-row">
+              <td>
+                <button type="button" class="btn-hover-green btn number">4</button>
+              </td>
+              <td>
+                <button type="button" class="btn-hover-green btn number">5</button>
+              </td>
+              <td>
+                <button type="button" class="btn-hover-green btn number">6</button>
+              </td>
+              <td>
+                <button type="button" class="operator btn btn-hover-orange">+</button>
+              </td>
+            </tr>
+            <tr class="calc-buttons-row">
+              <td>
+                <button type="button" class="btn-hover-green btn number">1</button>
+              </td>
+              <td>
+                <button type="button" class="btn-hover-green btn number">2</button>
+              </td>
+              <td>
+                <button type="button" class="btn-hover-green btn number">3</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn btn-hover-orange" id="minus" >+/-</button>
+              </td>
+            </tr>
+            <tr class="calc-buttons-row">
+              <td>
+                <button type="button" class="operator btn btn btn-hover-orange" >^</button>
+              </td>
+              <td>
+                <button type="button" class="operator btn btn btn-hover-orange" id="sqr">√</button>
+              </td>
+              <td>
+                <button type="button" class="btn-hover-green btn btn number">0</button>
+              </td>
+              <td>
+                <button type="button" class="btn  btn-hover-orange" id="decimalPoint">.</button>
+              </td>
+           </tr>
+           <tr class="calc-buttons-row">
+            <td>
+            <button type="button" class="btn-hover-green btn btn number" >:)</button>
+            </td>
+            <td>
+              <button type="button" class="btn-hover-green btn btn number" >:D</button>
+            </td>
+            <td>
+              <button type="button" class="btn-hover-green btn btn number" ><3</button>
+            </td>
+            <td>
+              <button type="button" class="operator btn btn btn-hover-orange">=</button>
+            </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="instruction">Для отрицательных чисел есть специальная кнопка "+/-". При работе с ней сперва введите число, а затем нажмите кнопку, даже если это необходимо сделать в ходе примера. Сначала - число, затем - кнопка. Кнопки ":)", ":D", "<3" исключительно для красоты.</div>
+  </main>
+  <script src="script.js">
+  </script>
+</body>
+</html>
